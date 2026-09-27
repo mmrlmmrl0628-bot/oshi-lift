@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#1f4e5f">
+<meta name="description" content="住まいの売却は、Limへ。60秒で入力できる無料査定。架空ブランドのポートフォリオLPです。">
+<title>住まいの売却は、Limへ｜無料査定</title>
+<style>
+:root{--main:#1f4e5f;--main-dark:#163a47;--accent:#e2733b;--accent-dark:#c65a24;--ink:#26323a;--muted:#5f6d75;--line:#dfe6e8;--paper:#f6f3ee;--soft:#eaf1f2}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#e9ecec;color:var(--ink);font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;line-height:1.8}
+button,select{font:inherit}
+button:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.shell{max-width:540px;margin:auto;background:#fff;box-shadow:0 0 60px #1f4e5f1a;overflow:clip;padding-bottom:84px}
+.demo{font-size:12px;text-align:center;background:var(--ink);color:#fff;padding:5px 12px}
+header{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border-bottom:1px solid var(--line)}
+.brand{font-family:Georgia,"Times New Roman",serif;font-size:28px;font-weight:700;letter-spacing:.06em;color:var(--main);text-decoration:none;line-height:1}
+.brand small{display:block;font-family:inherit;font-size:9px;letter-spacing:.3em;color:var(--muted);margin-top:4px}
+.header-tag{font-size:12px;color:var(--main);border:1px solid var(--main);border-radius:4px;padding:2px 8px}
+
+.hero{background:linear-gradient(160deg,var(--main) 0%,#2d6a7b 100%);color:#fff;padding:32px 20px 0;text-align:center;position:relative}
+.hero h1{margin:0;font-size:clamp(30px,8.4vw,42px);line-height:1.35;letter-spacing:.02em}
+.hero h1 em{font-style:normal;color:#ffd7a8}
+.hero-lead{margin:12px 0 0;font-size:15px;opacity:.92}
+.badge{display:inline-flex;align-items:center;gap:10px;margin:20px auto 0;background:#fff;color:var(--main);border-radius:999px;padding:8px 20px 8px 10px;font-weight:700;font-size:14px}
+.badge b{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--accent);color:#fff;font-size:12px;line-height:1.1}
+.note{font-size:11px;color:var(--muted);margin:8px 0 0}
+.hero .note{color:#d7e5e8}
+.house{display:block;width:100%;height:auto;margin-top:18px}
+
+.form-card{margin:-8px 16px 0;position:relative;background:#fff;border:2px solid var(--main);border-radius:12px;padding:22px 18px 20px;box-shadow:0 10px 24px #1f4e5f24}
+.steps{display:flex;justify-content:center;gap:8px;margin:0 0 6px}
+.steps span{font-size:12px;font-weight:700;background:var(--soft);color:var(--main);border-radius:4px;padding:2px 8px}
+.form-card h2{text-align:center;font-size:20px;margin:6px 0 14px}
+.form-card h2 em{font-style:normal;color:var(--accent);font-size:26px}
+label.select{display:block;font-size:13px;font-weight:700;margin-bottom:6px}
+.select-wrap{position:relative}
+.select-wrap::after{content:"";position:absolute;right:16px;top:50%;width:9px;height:9px;border-right:2px solid var(--main);border-bottom:2px solid var(--main);transform:translateY(-70%) rotate(45deg);pointer-events:none}
+select{width:100%;appearance:none;border:1px solid #b9c7cb;border-radius:8px;padding:13px 40px 13px 14px;background:#fff;color:var(--ink);font-size:16px}
+
+.cta{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;margin-top:16px;border:0;border-radius:10px;background:var(--accent);box-shadow:0 5px 0 var(--accent-dark);color:#fff;font-weight:800;font-size:20px;padding:15px 16px;cursor:pointer;text-decoration:none;transition:transform .1s,box-shadow .1s}
+.cta:active{transform:translateY(4px);box-shadow:0 1px 0 var(--accent-dark)}
+.cta small{font-size:12px;font-weight:700;background:#fff;color:var(--accent);border-radius:4px;padding:1px 6px}
+.cta::after{content:"";width:8px;height:8px;border-top:3px solid #fff;border-right:3px solid #fff;transform:rotate(45deg)}
+
+section{padding:48px 20px}
+.sec-title{text-align:center;margin:0 0 28px}
+.sec-title small{display:block;font-family:Georgia,serif;letter-spacing:.24em;color:var(--accent);font-size:12px;font-weight:700}
+.sec-title h2{margin:4px 0 0;font-size:24px;line-height:1.5}
+.sec-title h2 em{font-style:normal;color:var(--main);background:linear-gradient(transparent 62%,#ffd7a8 62%)}
+
+.reasons{background:var(--paper)}
+.reason{background:#fff;border-radius:12px;padding:26px 20px 20px;margin-bottom:22px;box-shadow:0 2px 0 var(--line)}
+.reason-no{display:inline-block;font-family:Georgia,serif;font-size:13px;letter-spacing:.14em;color:#fff;background:var(--main);border-radius:4px;padding:1px 10px}
+.reason h3{font-size:21px;line-height:1.55;margin:10px 0 10px}
+.reason h3 em{font-style:normal;color:var(--accent);font-size:28px}
+.reason p{margin:0;font-size:14px;color:var(--muted)}
+.chart{margin:16px 0 0;background:var(--soft);border-radius:8px;padding:14px}
+.chart svg{display:block;width:100%;height:auto}
+
+.support-box{border:2px solid var(--main);border-radius:12px;overflow:hidden;margin-bottom:18px}
+.support-head{background:var(--main);color:#fff;padding:10px 16px;font-size:13px;font-weight:700;letter-spacing:.06em}
+.support-body{padding:18px 16px;display:grid;grid-template-columns:auto 1fr;gap:6px 16px;align-items:center}
+.support-body h3{grid-column:1/-1;margin:0;font-size:18px}
+.amount{color:var(--accent);font-weight:800;line-height:1;white-space:nowrap}
+.amount small{font-size:13px;color:var(--ink)}
+.amount b{font-size:52px;font-family:Georgia,serif}
+.amount span{font-size:20px}
+.support-body p{margin:0;font-size:13px;color:var(--muted)}
+
+.mid-cta{background:var(--soft);text-align:center;padding:36px 20px}
+.mid-cta p{margin:0;font-weight:800;font-size:18px;color:var(--main)}
+.sub-link{display:inline-block;margin-top:16px;font-size:13px;color:var(--main)}
+
+.voice{display:flex;gap:14px;align-items:flex-start;margin-bottom:20px}
+.avatar{flex:none;width:64px;height:64px;border-radius:50%;background:var(--soft);display:grid;place-items:center}
+.bubble{position:relative;background:var(--paper);border-radius:10px;padding:12px 14px;font-size:14px}
+.bubble::before{content:"";position:absolute;left:-8px;top:22px;border:8px solid transparent;border-left:0;border-right-color:var(--paper)}
+.bubble b{display:block;color:var(--main);font-size:15px;margin-bottom:2px}
+.bubble span{display:block;font-size:11px;color:var(--muted);margin-top:6px}
+
+.faq{background:var(--paper)}
+details{background:#fff;border-radius:8px;margin-bottom:10px;box-shadow:0 1px 0 var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;gap:10px;align-items:flex-start;padding:15px 44px 15px 14px;position:relative;font-weight:700;font-size:15px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"＋";position:absolute;right:14px;top:14px;color:var(--main);font-weight:800}
+details[open] summary::after{content:"－"}
+.q,.a{flex:none;font-family:Georgia,serif;font-weight:700;font-size:18px;line-height:1.4}
+.q{color:var(--main)}
+.a{color:var(--accent)}
+.answer{display:flex;gap:10px;padding:0 16px 16px 14px;font-size:14px;color:var(--muted)}
+
+footer{background:var(--main-dark);color:#c8d6da;padding:28px 20px;font-size:12px;text-align:center}
+footer ul{list-style:none;padding:0;margin:0 0 16px;display:flex;flex-wrap:wrap;justify-content:center;gap:4px 16px}
+footer a{color:#fff}
+footer .brand{color:#fff;display:inline-block;margin-bottom:10px}
+
+.fixed-cta{position:fixed;left:0;right:0;bottom:0;z-index:10;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:#ffffffee;backdrop-filter:blur(6px);border-top:1px solid var(--line);transform:translateY(110%);transition:transform .25s}
+.fixed-cta.show{transform:none}
+.fixed-cta .cta{max-width:508px;margin:0 auto;font-size:18px;padding:12px}
+
+dialog{border:0;border-radius:14px;padding:0;width:min(92vw,420px);color:var(--ink)}
+dialog::backdrop{background:#0f2229aa}
+.dlg{padding:28px 22px 22px;text-align:center}
+.dlg h2{margin:0 0 8px;font-size:20px;color:var(--main)}
+.dlg p{margin:0 0 6px;font-size:14px;color:var(--muted)}
+.dlg .pref{font-weight:800;color:var(--ink)}
+.close{margin-top:18px;border:1px solid var(--main);background:#fff;color:var(--main);border-radius:8px;padding:10px 24px;cursor:pointer;font-weight:700}
+
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.fixed-cta{transition:none}}
+</style>
+</head>
+<body>
+<div class="shell">
+  <div class="demo">架空ブランドによるポートフォリオ用デモページです</div>
+  <header>
+    <a class="brand" href="#top">Lim<small>REAL ESTATE</small></a>
+    <span class="header-tag">売却査定</span>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <h1>住まいの売却は、<br><em>Lim</em>へ。</h1>
+      <p class="hero-lead">地域を知るスタッフが、<br>あなたの住まいの「いま」の価値をお伝えします。</p>
+      <div class="badge"><b>査定<br>無料</b>相談だけでもお気軽に</div>
+      <svg class="house" viewBox="0 0 500 170" aria-hidden="true">
+        <path d="M0 150 Q125 120 250 138 T500 128 V170 H0Z" fill="#ffffff" opacity=".12"/>
+        <g fill="#ffffff">
+          <rect x="70" y="70" width="80" height="80" opacity=".85"/><path d="M60 74 110 34 160 74Z" opacity=".9"/>
+          <rect x="190" y="40" width="120" height="110" opacity=".95"/><path d="M178 46 250 0 322 46Z"/>
+          <rect x="350" y="84" width="72" height="66" opacity=".8"/><path d="M340 88 386 54 432 88Z" opacity=".85"/>
+        </g>
+        <g fill="#2d6a7b">
+          <rect x="96" y="96" width="28" height="54"/>
+          <rect x="210" y="62" width="30" height="26"/><rect x="260" y="62" width="30" height="26"/><rect x="236" y="106" width="28" height="44"/>
+          <rect x="372" y="104" width="28" height="22"/>
+        </g>
+        <rect x="0" y="150" width="500" height="20" fill="#fff"/>
+      </svg>
+    </div>
+
+    <form class="form-card" id="assess" onsubmit="openDialog(event)">
+      <div class="steps"><span>STEP 1</span><span>STEP 2</span><span>STEP 3</span></div>
+      <h2>3ステップ・<em>60秒</em>で入力</h2>
+      <label class="select" for="pref">物件所在地の都道府県を選択</label>
+      <div class="select-wrap">
+        <select id="pref" name="pref" required>
+          <option value="">都道府県を選択</option>
+          <optgroup label="関東"><option>東京都</option><option>神奈川県</option><option>埼玉県</option><option>千葉県</option><option>茨城県</option></optgroup>
+          <optgroup label="関西"><option>大阪府</option><option>兵庫県</option><option>京都府</option><option>滋賀県</option><option>奈良県</option></optgroup>
+          <optgroup label="東海"><option>愛知県</option><option>岐阜県</option></optgroup>
+          <optgroup label="その他"><option>北海道</option><option>宮城県</option><option>広島県</option><option>岡山県</option><option>福岡県</option></optgroup>
+        </select>
+      </div>
+      <button class="cta" type="submit"><small>無料</small>Webで査定を申し込む</button>
+    </form>
+
+    <section class="reasons">
+      <div class="sec-title"><small>REASONS</small><h2>Limが<em>選ばれる</em>理由</h2></div>
+
+      <article class="reason">
+        <span class="reason-no">REASON 01</span>
+        <h3>納得できる価格で、<br><em>提案価格以上</em>の成約へ</h3>
+        <p>最新の相場データと、街をよく知るスタッフの目で、根拠のある価格をご提案。「なぜこの価格なのか」をひとつずつご説明します。</p>
+        <div class="chart" role="img" aria-label="提案価格に対する成約価格の割合のサンプルグラフ。提案価格以上が56パーセント">
+          <svg viewBox="0 0 300 120">
+            <text x="150" y="16" text-anchor="middle" font-size="11" fill="#5f6d75">提案価格に対する成約価格（サンプル）</text>
+            <rect x="20" y="34" width="260" height="30" rx="4" fill="#dfe6e8"/>
+            <rect x="20" y="34" width="146" height="30" rx="4" fill="#e2733b"/>
+            <text x="30" y="54" font-size="12" font-weight="700" fill="#fff">提案価格以上 56%</text>
+            <text x="274" y="54" text-anchor="end" font-size="12" fill="#5f6d75">44%</text>
+            <text x="20" y="92" font-size="10" fill="#5f6d75">■ 提案価格以上で成約</text>
+            <text x="160" y="92" font-size="10" fill="#5f6d75">■ 提案価格未満で成約</text>
+            <rect x="20" y="84" width="9" height="9" fill="#e2733b"/><rect x="160" y="84" width="9" height="9" fill="#b9c7cb"/>
+          </svg>
+        </div>
+        <p class="note">※数値はデザイン用のサンプルで、実績ではありません。</p>
+      </article>
+
+      <article class="reason">
+        <span class="reason-no">REASON 02</span>
+        <h3>適正価格だから、<br><em>2ヶ月以内</em>のスピード成約</h3>
+        <p>価格設定を誤ると、売却が長引き、結果的に値下げが必要になることも。はじめから適正な価格で売り出すことで、早期の成約を目指します。</p>
+        <div class="chart" role="img" aria-label="成約までの期間のサンプルグラフ。1ヶ月以内32パーセント、2ヶ月以内22パーセント、3ヶ月以内18パーセント、それ以上28パーセント">
+          <svg viewBox="0 0 300 150">
+            <text x="150" y="16" text-anchor="middle" font-size="11" fill="#5f6d75">売り出しから成約までの期間（サンプル）</text>
+            <g font-size="11" text-anchor="middle">
+              <rect x="30" y="46" width="44" height="80" fill="#e2733b"/><text x="52" y="40" font-weight="700" fill="#e2733b">32%</text><text x="52" y="142" fill="#5f6d75">〜1ヶ月</text>
+              <rect x="96" y="71" width="44" height="55" fill="#e2733b"/><text x="118" y="65" font-weight="700" fill="#e2733b">22%</text><text x="118" y="142" fill="#5f6d75">〜2ヶ月</text>
+              <rect x="162" y="81" width="44" height="45" fill="#8aa8b0"/><text x="184" y="75" fill="#5f6d75">18%</text><text x="184" y="142" fill="#5f6d75">〜3ヶ月</text>
+              <rect x="228" y="56" width="44" height="70" fill="#8aa8b0"/><text x="250" y="50" fill="#5f6d75">28%</text><text x="250" y="142" fill="#5f6d75">それ以上</text>
+            </g>
+            <line x1="20" y1="126" x2="282" y2="126" stroke="#8aa8b0"/>
+          </svg>
+        </div>
+        <p class="note">※数値はデザイン用のサンプルで、実績ではありません。</p>
+      </article>
+    </section>
+
+    <section>
+      <div class="sec-title"><small>SUPPORT</small><h2>売却前も、<em>売却後</em>も<br>安心のサポート</h2></div>
+      <div class="support-box">
+        <div class="support-head">売却後の安心サポート 1</div>
+        <div class="support-body">
+          <h3>建物チェック＆補修サポート</h3>
+          <div class="amount"><small>最大</small><b>300</b><span>万円</span></div>
+          <p>引き渡し後の一定期間に見つかった対象箇所の不具合について、補修費用をサポートします。</p>
+        </div>
+      </div>
+      <div class="support-box">
+        <div class="support-head">売却後の安心サポート 2</div>
+        <div class="support-body">
+          <h3>設備チェック＆修理サポート</h3>
+          <div class="amount"><small>最大</small><b>10</b><span>万円</span></div>
+          <p>引き渡し直後に起きた給湯器などの対象設備の故障について、修理費用をサポートします。</p>
+        </div>
+      </div>
+      <p class="note">※架空のサービス例です。対象・条件・金額は実在のサービスを示すものではありません。</p>
+    </section>
+
+    <div class="mid-cta">
+      <p>まずはお気軽にご相談ください</p>
+      <a class="cta" href="#assess"><small>無料</small>Webで査定を申し込む</a>
+      <a class="sub-link" href="#top">住まいの購入をお考えの方はこちら</a>
+    </div>
+
+    <section>
+      <div class="sec-title"><small>VOICE</small><h2>ご成約されたお客さまの声</h2></div>
+      <div class="voice">
+        <div class="avatar"><svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="14" r="8" fill="#8aa8b0"/><path d="M4 38c2-10 9-14 16-14s14 4 16 14" fill="#8aa8b0"/></svg></div>
+        <p class="bubble"><b>思っていたより早く決まりました</b>相談のたびに丁寧に説明してもらえて、不安なく売却を進められました。<span>50代・マンション売却（イメージ）</span></p>
+      </div>
+      <div class="voice">
+        <div class="avatar"><svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="14" r="8" fill="#e2733b" opacity=".7"/><path d="M4 38c2-10 9-14 16-14s14 4 16 14" fill="#e2733b" opacity=".7"/></svg></div>
+        <p class="bubble"><b>住み替えのタイミングも相談できた</b>売却と購入の順番から一緒に考えてもらい、納得のいく住み替えができました。<span>40代・戸建て売却（イメージ）</span></p>
+      </div>
+      <div class="voice">
+        <div class="avatar"><svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="14" r="8" fill="#1f4e5f" opacity=".7"/><path d="M4 38c2-10 9-14 16-14s14 4 16 14" fill="#1f4e5f" opacity=".7"/></svg></div>
+        <p class="bubble"><b>レスポンスの早さが心強かった</b>質問への返事がいつも早く、細かい要望にも応えてもらえました。<span>60代・土地売却（イメージ）</span></p>
+      </div>
+      <p class="note">※掲載の声は架空のイメージです。</p>
+    </section>
+
+    <section class="faq">
+      <div class="sec-title"><small>FAQ</small><h2>よくあるご質問</h2></div>
+      <details><summary><span class="q">Q.</span>査定したら、必ず売却しないといけませんか？</summary><div class="answer"><span class="a">A.</span><p>いいえ。査定だけのご依頼も歓迎しています。価格を知ったうえで、売るかどうかをゆっくりご検討ください。</p></div></details>
+      <details><summary><span class="q">Q.</span>本当に無料ですか？</summary><div class="answer"><span class="a">A.</span><p>査定・ご相談は無料です。費用が発生するのは、ご成約時の仲介手数料のみです。</p></div></details>
+      <details><summary><span class="q">Q.</span>しつこい営業の連絡が来ないか心配です。</summary><div class="answer"><span class="a">A.</span><p>ご連絡の方法や時間帯はご希望に合わせます。「メールのみ」などのご指定もお気軽にどうぞ。</p></div></details>
+      <details><summary><span class="q">Q.</span>AI査定と何がちがうのですか？</summary><div class="answer"><span class="a">A.</span><p>AI査定は周辺データをもとにした目安です。Limではスタッフが日当たりや眺望、管理状況など、データに表れにくい点も加味して価格をご提案します。</p></div></details>
+      <details><summary><span class="q">Q.</span>売却にかかる税金についても相談できますか？</summary><div class="answer"><span class="a">A.</span><p>一般的な仕組みについてご説明します。個別の申告内容については、提携の税理士へのご相談をご案内します。</p></div></details>
+      <details><summary><span class="q">Q.</span>売却はどのような流れで進みますか？</summary><div class="answer"><span class="a">A.</span><p>①査定のお申し込み → ②訪問査定・価格のご提案 → ③媒介契約 → ④販売活動 → ⑤売買契約 → ⑥お引き渡し、の順に進みます。</p></div></details>
+    </section>
+
+    <div class="mid-cta">
+      <p>まずはお気軽にご相談ください</p>
+      <a class="cta" href="#assess"><small>無料</small>Webで査定を申し込む</a>
+      <a class="sub-link" href="#top">住まいの購入をお考えの方はこちら</a>
+    </div>
+  </main>
+
+  <footer>
+    <a class="brand" href="#top">Lim<small>REAL ESTATE</small></a>
+    <ul>
+      <li><a href="#top">個人情報の取り扱い</a></li>
+      <li><a href="#top">サイトご利用上の注意</a></li>
+      <li><a href="#top">会社情報</a></li>
+    </ul>
+    <p>本ページは架空ブランドによるポートフォリオ作品です。実在の企業・サービスとは関係ありません。</p>
+    <p>© Lim REAL ESTATE — PORTFOLIO CONCEPT</p>
+  </footer>
+</div>
+
+<div class="fixed-cta" id="fixedCta"><a class="cta" href="#assess"><small>無料</small>60秒で査定を申し込む</a></div>
+
+<dialog id="dlg" aria-labelledby="dlgTitle">
+  <div class="dlg">
+    <h2 id="dlgTitle">デモページです</h2>
+    <p><span class="pref" id="dlgPref"></span>が選択されました。</p>
+    <p>実際のサイトでは、ここから物件情報の入力フォーム（STEP 2〜3）へ進みます。このページでは情報を送信・保存しません。</p>
+    <button class="close" type="button" onclick="dlg.close()">閉じる</button>
+  </div>
+</dialog>
+
+<script>
+const dlg=document.getElementById('dlg');
+function openDialog(e){
+  e.preventDefault();
+  document.getElementById('dlgPref').textContent=document.getElementById('pref').value;
+  dlg.showModal();
+}
+dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close()});
+const fixedCta=document.getElementById('fixedCta');
+const form=document.getElementById('assess');
+new IntersectionObserver(([en])=>{
+  fixedCta.classList.toggle('show',!en.isIntersecting&&en.boundingClientRect.top<0);
+}).observe(form);
+</script>
+</body>
+</html>
