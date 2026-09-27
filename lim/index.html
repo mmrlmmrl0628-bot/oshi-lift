@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#009ece">
-<meta name="description" content="名古屋で土地・一戸建て・マンションの売却をお考えなら、不動産コンサルティング会社Limへ。ハウスメーカー出身のスタッフが、建物の価値まで伝わる売却をサポートします。">
+<meta name="description" content="土地・一戸建て・マンションの売却をお考えなら、全国対応の、不動産コンサルティング会社Limへ。ハウスメーカー出身のスタッフが、建物の価値まで伝わる売却をサポートします。">
 <title>不動産の売却・査定はLimへ｜名古屋の不動産コンサルティング</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,6 +52,13 @@ select{width:100%;appearance:none;border:1px solid #b5c8d0;border-radius:8px;pad
 .types input:checked+label{background:var(--main);border-color:var(--main);color:#fff}
 .types input:focus-visible+label{outline:3px solid var(--accent);outline-offset:2px}
 
+.form-note{margin:10px 0 0;text-align:center;font-size:12px;color:var(--muted)}
+.tmp{display:inline-block;vertical-align:middle;background:#ffe14d;color:#5a4a00;font-size:11px;font-weight:900;border-radius:3px;padding:0 6px;margin-left:6px;letter-spacing:0}
+.stats{display:grid;gap:14px;margin:0 0 26px}
+.stat{background:var(--paper);border-radius:12px;padding:18px 16px}
+.stat h3{margin:0;font-size:18px;font-weight:900;line-height:1.5;text-align:center}
+.stat h3 em{font-style:normal;color:var(--accent);font-size:30px}
+.stat svg{display:block;width:100%;height:auto;margin-top:10px}
 .cta{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;margin-top:6px;border:0;border-radius:10px;background:var(--accent);box-shadow:0 5px 0 var(--accent-dark);color:#fff;font-weight:900;font-size:20px;padding:14px 16px;cursor:pointer;text-decoration:none;transition:transform .1s,box-shadow .1s}
 .cta:active{transform:translateY(4px);box-shadow:0 1px 0 var(--accent-dark)}
 .cta small{font-size:12px;font-weight:900;background:#fff;color:var(--accent);border-radius:4px;padding:1px 6px}
@@ -131,22 +138,41 @@ footer a{color:#fff}
 .fixed-inner .cta{margin:0;font-size:17px;padding:12px}
 .fixed-tel{flex:none;display:grid;place-items:center;width:58px;border-radius:10px;border:2px solid var(--main);color:var(--main);text-decoration:none;font-size:11px;font-weight:700;line-height:1.2}
 
+dialog{border:0;border-radius:14px;padding:0;width:min(94vw,480px);max-height:92vh;color:var(--ink)}
+dialog::backdrop{background:#0d1d2aaa}
+.dlg{padding:22px 18px 20px}
+.dlg-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.dlg h2{margin:0 0 4px;font-size:19px;font-weight:900;color:var(--navy)}
+.dlg-x{border:0;background:none;font-size:26px;line-height:1;color:var(--muted);cursor:pointer;padding:0 4px}
+.summary{background:var(--soft);border-radius:8px;padding:8px 12px;font-size:13px;margin:0 0 14px}
+.dlg .field label{font-size:13px}
+.req{font-size:10px;color:#fff;background:var(--accent);border-radius:3px;padding:0 5px}
+.opt{font-size:10px;color:var(--muted);border:1px solid var(--rule);border-radius:3px;padding:0 5px}
+.dlg input[type=text],.dlg input[type=tel],.dlg input[type=email],.dlg textarea{width:100%;border:1px solid #b5c8d0;border-radius:8px;padding:10px 12px;font:inherit;font-size:16px;color:var(--ink)}
+.dlg textarea{min-height:80px;resize:vertical}
+.agree{display:flex;gap:8px;align-items:flex-start;font-size:13px;margin:4px 0 6px}
+.agree input{margin-top:5px}
+.agree a{color:var(--main-dark)}
+.thanks{text-align:center;padding:10px 0}
+.thanks img{width:150px;margin:0 auto 8px}
+.thanks p{font-size:14px;color:var(--muted);margin:6px 0}
+.close{margin-top:14px;border:1px solid var(--main-dark);background:#fff;color:var(--main-dark);border-radius:8px;padding:10px 24px;cursor:pointer;font-weight:700}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.fixed-cta{transition:none}}
 </style>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="tel" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></symbol>
+  <symbol id="icon-tel" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></symbol>
 </svg>
 <div class="shell">
   <header>
     <a href="#top"><img class="logo" src="assets/logo.png" width="506" height="104" alt="株式会社Lim"></a>
-    <a class="tel-btn" href="tel:0528755860"><svg width="18" height="18" aria-hidden="true"><use href="#tel"/></svg><span>052-875-5860<small>9:30〜19:00（火・水定休）</small></span></a>
+    <a class="tel-btn" href="tel:0528755860"><svg width="18" height="18" aria-hidden="true"><use href="#icon-tel"/></svg><span>052-875-5860<small>9:30〜19:00（火・水定休）</small></span></a>
   </header>
 
   <main id="top">
     <div class="hero">
-      <p class="hero-tag">名古屋の不動産売却・査定</p>
+      <p class="hero-tag">全国対応｜不動産の売却・査定</p>
       <h1>大切な住まいの<br>売却は、<em>Lim</em>へ。</h1>
       <p class="hero-lead">想いの詰まった大切な資産だからこそ、<br>納得のいくご売却を。</p>
       <div class="hero-visual">
@@ -170,23 +196,23 @@ footer a{color:#fff}
         </div>
       </div>
       <div class="field">
-        <label for="area"><span>STEP 2</span>物件の所在地</label>
+        <label for="area"><span>STEP 2</span>物件の所在地（全国対応）</label>
         <div class="select-wrap">
           <select id="area" name="area" required>
-            <option value="">所在地を選択</option>
-            <optgroup label="名古屋市">
-              <option>名古屋市千種区</option><option>名古屋市東区</option><option>名古屋市北区</option><option>名古屋市西区</option>
-              <option>名古屋市中村区</option><option>名古屋市中区</option><option>名古屋市昭和区</option><option>名古屋市瑞穂区</option>
-              <option>名古屋市熱田区</option><option>名古屋市中川区</option><option>名古屋市港区</option><option>名古屋市南区</option>
-              <option>名古屋市守山区</option><option>名古屋市緑区</option><option>名古屋市名東区</option><option>名古屋市天白区</option>
-            </optgroup>
-            <optgroup label="名古屋市以外">
-              <option>愛知県（名古屋市以外）</option><option>岐阜県</option><option>三重県</option><option>その他の地域</option>
-            </optgroup>
+            <option value="">都道府県を選択</option>
+            <optgroup label="東海"><option>愛知県</option><option>岐阜県</option><option>三重県</option><option>静岡県</option></optgroup>
+            <optgroup label="北海道・東北"><option>北海道</option><option>青森県</option><option>岩手県</option><option>宮城県</option><option>秋田県</option><option>山形県</option><option>福島県</option></optgroup>
+            <optgroup label="関東"><option>茨城県</option><option>栃木県</option><option>群馬県</option><option>埼玉県</option><option>千葉県</option><option>東京都</option><option>神奈川県</option></optgroup>
+            <optgroup label="北陸・甲信越"><option>新潟県</option><option>富山県</option><option>石川県</option><option>福井県</option><option>山梨県</option><option>長野県</option></optgroup>
+            <optgroup label="近畿"><option>滋賀県</option><option>京都府</option><option>大阪府</option><option>兵庫県</option><option>奈良県</option><option>和歌山県</option></optgroup>
+            <optgroup label="中国"><option>鳥取県</option><option>島根県</option><option>岡山県</option><option>広島県</option><option>山口県</option></optgroup>
+            <optgroup label="四国"><option>徳島県</option><option>香川県</option><option>愛媛県</option><option>高知県</option></optgroup>
+            <optgroup label="九州・沖縄"><option>福岡県</option><option>佐賀県</option><option>長崎県</option><option>熊本県</option><option>大分県</option><option>宮崎県</option><option>鹿児島県</option><option>沖縄県</option></optgroup>
           </select>
         </div>
       </div>
       <button class="cta" type="submit"><small>STEP 3</small>無料査定を申し込む</button>
+      <p class="form-note">次の画面でご連絡先を入力して完了です</p>
     </form>
 
     <section class="worry">
@@ -204,6 +230,34 @@ footer a{color:#fff}
 
     <section>
       <div class="sec-title"><small class="en">REASONS</small><h2>Limが<em>選ばれる</em>理由</h2></div>
+
+      <!-- 仮：実績の数値は確定後に差し替え -->
+      <div class="stats">
+        <div class="stat">
+          <h3>2人に1人以上が<br><em>査定価格以上</em>で成約<span class="tmp">仮</span></h3>
+          <svg viewBox="0 0 300 90" role="img" aria-label="査定価格に対する成約価格の割合。査定価格以上で成約が56パーセント（仮の数値）">
+            <rect x="10" y="10" width="280" height="34" rx="6" fill="#dde8ed"/>
+            <rect x="10" y="10" width="157" height="34" rx="6" fill="#ff5f41"/>
+            <text x="22" y="32" font-size="13" font-weight="700" fill="#fff">査定価格以上 56%</text>
+            <text x="282" y="32" text-anchor="end" font-size="12" fill="#5d6b75">44%</text>
+            <rect x="10" y="62" width="10" height="10" fill="#ff5f41"/><text x="26" y="71" font-size="11" fill="#5d6b75">査定価格以上で成約</text>
+            <rect x="150" y="62" width="10" height="10" fill="#b5c8d0"/><text x="166" y="71" font-size="11" fill="#5d6b75">査定価格未満で成約</text>
+          </svg>
+        </div>
+        <div class="stat">
+          <h3>2人に1人以上が<br><em>3ヶ月以内</em>に成約<span class="tmp">仮</span></h3>
+          <svg viewBox="0 0 300 140" role="img" aria-label="売り出しから成約までの期間。1ヶ月以内24パーセント、3ヶ月以内30パーセント、6ヶ月以内28パーセント、それ以上18パーセント（仮の数値）">
+            <g font-size="11" text-anchor="middle">
+              <rect x="24" y="62" width="48" height="56" fill="#ff5f41"/><text x="48" y="56" font-weight="700" fill="#ff5f41">24%</text><text x="48" y="134" fill="#5d6b75">〜1ヶ月</text>
+              <rect x="92" y="48" width="48" height="70" fill="#ff5f41"/><text x="116" y="42" font-weight="700" fill="#ff5f41">30%</text><text x="116" y="134" fill="#5d6b75">〜3ヶ月</text>
+              <rect x="160" y="53" width="48" height="65" fill="#9fd8ec"/><text x="184" y="47" fill="#5d6b75">28%</text><text x="184" y="134" fill="#5d6b75">〜6ヶ月</text>
+              <rect x="228" y="76" width="48" height="42" fill="#9fd8ec"/><text x="252" y="70" fill="#5d6b75">18%</text><text x="252" y="134" fill="#5d6b75">それ以上</text>
+            </g>
+            <line x1="14" y1="118" x2="286" y2="118" stroke="#9fd8ec"/>
+          </svg>
+        </div>
+        <p class="note">※仮の数値です。実績データ確定後に差し替えます。</p>
+      </div>
 
       <article class="reason">
         <span class="reason-no en">01</span>
@@ -261,27 +315,28 @@ footer a{color:#fff}
     </section>
 
     <section>
-      <div class="sec-title"><small class="en">REVIEWS</small><h2>Limをご利用いただいた<br>お客さまの声</h2></div>
+      <div class="sec-title"><small class="en">REVIEWS</small><h2>ご売却されたお客さまの声<span class="tmp">仮</span></h2></div>
+      <!-- 仮：実際の売却のお客さまの声が集まったら差し替え -->
       <div class="voice">
         <div class="stars" aria-label="5つ星">★★★★★</div>
-        <b>大変信頼できる不動産会社さんでした。</b>
-        <p>当初からとても丁寧な対応をしていただき、大変信頼できる不動産会社さんでした。</p>
-        <span>M.Yさま</span>
+        <b>建物の良さをきちんと伝えてもらえました</b>
+        <p>築年数が気になっていましたが、家のつくりや手入れしてきた点を買主さんに説明してもらえ、納得できる価格で売却できました。</p>
+        <span>一戸建て売却・40代（仮）</span>
       </div>
       <div class="voice">
         <div class="stars" aria-label="5つ星">★★★★★</div>
-        <b>丁寧に対応していただき安心できました。</b>
-        <p>分からないことだらけでしたが、いつも丁寧に対応していただき安心できました。</p>
-        <span>N.Tさま</span>
+        <b>売却と家づくりを一緒に相談できた</b>
+        <p>マンションを売って戸建てを建てる住み替えでした。売却の時期からハウスメーカー選び、資金計画までまとめて相談でき、とても楽でした。</p>
+        <span>マンション売却・30代（仮）</span>
       </div>
       <div class="voice">
         <div class="stars" aria-label="5つ星">★★★★★</div>
-        <b>納得のいく土地に出会える事ができました。</b>
-        <p>担当の方には迅速に対応していただき、ありがとうございました。</p>
-        <span>K.Sさま</span>
+        <b>遠方の実家の土地も相談できました</b>
+        <p>相続した土地をどうするか迷っていましたが、分からないことを丁寧に説明してもらえ、安心して任せられました。</p>
+        <span>土地売却・50代（仮）</span>
       </div>
-      <p class="note">※土地のご購入でご利用いただいたお客さまの声より抜粋しています。</p>
-      <p style="text-align:center;margin:10px 0 0"><a class="sub-link" href="https://www.lifeismore.co.jp/review/">お客さまの声をもっと見る</a></p>
+      <p class="note">※仮の文章です。実際のお客さまの声に差し替えます。</p>
+      <p style="text-align:center;margin:10px 0 0"><a class="sub-link" href="https://www.lifeismore.co.jp/review/">Limをご利用いただいたお客さまの声はこちら</a></p>
     </section>
 
     <section class="faq">
@@ -325,19 +380,68 @@ footer a{color:#fff}
 </div>
 
 <div class="fixed-cta" id="fixedCta"><div class="fixed-inner">
-  <a class="fixed-tel" href="tel:0528755860"><svg width="20" height="20" aria-hidden="true"><use href="#tel"/></svg>電話</a>
+  <a class="fixed-tel" href="tel:0528755860"><svg width="20" height="20" aria-hidden="true"><use href="#icon-tel"/></svg>電話</a>
   <a class="cta" href="#assess"><small>無料</small>査定を申し込む</a>
 </div></div>
 
-<script>
-// 申し込み先。専用の査定フォームができたら、そのURLに差し替えてください
-const APPLY_URL = 'https://www.lifeismore.co.jp/contact/';
+<dialog id="dlg" aria-labelledby="dlgTitle">
+  <form class="dlg" id="contactForm" onsubmit="send(event)">
+    <div id="formView">
+      <div class="dlg-head"><h2 id="dlgTitle">ご連絡先の入力<span class="tmp">仮</span></h2><button class="dlg-x" type="button" onclick="dlg.close()" aria-label="閉じる">×</button></div>
+      <p class="summary" id="summary"></p>
+      <div class="field"><label for="name">お名前 <span class="req">必須</span></label><input type="text" id="name" name="name" autocomplete="name" required></div>
+      <div class="field"><label for="tel">電話番号 <span class="req">必須</span></label><input type="tel" id="tel" name="tel" autocomplete="tel" inputmode="tel" required></div>
+      <div class="field"><label for="email">メールアドレス <span class="req">必須</span></label><input type="email" id="email" name="email" autocomplete="email" required></div>
+      <div class="field"><label for="address">物件の住所（市区町村以降） <span class="opt">任意</span></label><input type="text" id="address" name="address" placeholder="例：名古屋市昭和区菊園町"></div>
+      <div class="field"><label for="timing">売却のご希望時期 <span class="opt">任意</span></label>
+        <div class="select-wrap"><select id="timing" name="timing"><option value="">選択してください</option><option>すぐにでも</option><option>3ヶ月以内</option><option>半年以内</option><option>1年以内</option><option>未定・価格を知りたいだけ</option></select></div></div>
+      <div class="field"><label for="message">ご要望・連絡の希望時間など <span class="opt">任意</span></label><textarea id="message" name="message" placeholder="例：平日18時以降に電話希望、メールのみ希望 など"></textarea></div>
+      <label class="agree"><input type="checkbox" required><span><a href="https://www.lifeismore.co.jp/policy/" target="_blank" rel="noopener">プライバシーポリシー</a>に同意する</span></label>
+      <button class="cta" type="submit">この内容で査定を申し込む</button>
+    </div>
+    <div class="thanks" id="thanksView" hidden>
+      <img src="assets/symbol.png" width="194" height="202" alt="">
+      <h2>お申し込みありがとうございます</h2>
+      <p>担当者より、ご希望の方法でご連絡いたします。</p>
+      <p id="demoNote" hidden>※仮フォームのため、送信先が未設定です。入力内容は送信・保存されていません。</p>
+      <button class="close" type="button" onclick="dlg.close()">閉じる</button>
+    </div>
+  </form>
+</dialog>
 
+<script>
+// 仮：送信先（フォーム受付サービスやGoogle Apps ScriptなどのURL）。未設定のあいだは送信せず完了画面だけ表示します
+const FORM_ENDPOINT = '';
+
+const dlg = document.getElementById('dlg');
 function apply(e){
   e.preventDefault();
   const f = e.target;
-  const params = new URLSearchParams({type: f.type.value, area: f.area.value});
-  location.href = APPLY_URL + '?' + params;
+  document.getElementById('summary').textContent = `物件の種類：${f.type.value}／所在地：${f.area.value}`;
+  document.getElementById('formView').hidden = false;
+  document.getElementById('thanksView').hidden = true;
+  dlg.showModal();
+}
+async function send(e){
+  e.preventDefault();
+  const a = document.getElementById('assess');
+  const data = Object.fromEntries(new FormData(e.target));
+  Object.assign(data, {type: a.type.value, area: a.area.value, page: location.href});
+  const btn = e.target.querySelector('button[type=submit]');
+  if(FORM_ENDPOINT){
+    btn.disabled = true;
+    try{
+      const res = await fetch(FORM_ENDPOINT, {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(data)});
+      if(!res.ok) throw new Error(res.status);
+    }catch(err){
+      alert('送信できませんでした。お手数ですがお電話（052-875-5860）でご連絡ください。');
+      btn.disabled = false;
+      return;
+    }
+  }
+  document.getElementById('demoNote').hidden = !!FORM_ENDPOINT;
+  document.getElementById('formView').hidden = true;
+  document.getElementById('thanksView').hidden = false;
 }
 const fixedCta = document.getElementById('fixedCta');
 new IntersectionObserver(([en]) => {
